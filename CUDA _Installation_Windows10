@@ -1,1 +1,50 @@
+Make sure your Windows 10/11 installation is updated to the latest version. 
+
+Install/Upgrade NVIDIA GPU Drivers to the latest version: https://www.nvidia.com/download/index.aspx
+    - Choose Game Ready Driver
+    - Choose either Windows 10/11, depending on what version you are running. 
+    - Choose your GPU.
+    - Proceed to download and install the new drivers.
+
+Reboot System.
+
+Install Anaconda: https://www.anaconda.com/download
+
+Install Visual Studio 2017: https://download.visualstudio.microsoft.com/download/pr/4035d2dd-2d45-48eb-9104-d4dc7d808a7b/f5675416a31cbf8c29e74d75a1790cf7/vs_community.exe
+
+Reboot System. 
+
+Install CUDA 11.2: https://developer.download.nvidia.com/compute/cuda/11.2.0/local_installers/cuda_11.2.0_460.89_win10.exe
+
+Reboot System.
+
+Navigate to the DeepLabCut Github Repository: https://github.com/DeepLabCut/DeepLabCut
+    - Go under "conda-environments"
+        - "DEEPLABCUT.yaml"
+            - Download the raw file and save it. 
+
+Open Anaconda Prompt as Administrator and navigate to the directory where the "DEEPLABCUT.yaml" file is saved. 
+    - usually done through a series of "cd" commands. Use "ls" to list all the files in the directory to make sure you are in the correct one.
+
+Once in the directory, type the following: conda env create -f DEEPLABCUT.yaml
+    - The environment will now be created.
+
+Activate the new environment by typing the following: activate DEEPLABCUT
+
+Type the following commands with the new environment activated: 
+    - conda install -c conda-forge cudnn
+    - pip install --upgrade tensorflow==2.10.0
+
+Installation is now complete.
+
+Reboot System. 
+
+Running DeepLabCut:
+
+Open Anaconda Prompt and type: conda activate DEEPLABCUT
+
+Now type: python -m deeplabcut 
+
+DeepLabCut should now be running.
+
 
