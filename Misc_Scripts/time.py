@@ -1,3 +1,7 @@
+# Before using this, use Simon's time_calculator.py script in the repo.
+# Place this file in a directory and have an "output" folder created in the same one.
+
+
 import os
 import csv
 
