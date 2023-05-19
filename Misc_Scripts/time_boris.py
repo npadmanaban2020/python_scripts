@@ -1,4 +1,4 @@
-# Export events in BORIS as tabular events, save as CSV. Modify each CSV file to only have the columns "Behavior" and "Status". If doing for a large amount of BORIS videos, contact me and I can make a script for it.
+# Export events in BORIS as tabular events, save as CSV. Modify each CSV file to only have the columns "Behavior" and "Status". Use the BORIS_CSV_MOD.py file.
 
 import csv
 import os
