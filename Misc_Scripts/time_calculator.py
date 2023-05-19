@@ -1,3 +1,6 @@
+# Change the FPS to the ones of your videos.
+# Change the classifiers to the ones that you used. 
+
 import pandas as pd
 import os, glob
 from simba.misc_tools import detect_bouts, get_fn_ext
