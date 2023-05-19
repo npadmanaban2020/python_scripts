@@ -1,3 +1,9 @@
+# Change the behaviors in line 8 to the ones that you had observed in your experiment. 
+# The () next to each behavior is a color in the CYMK color space.
+# In behavior_times for each behavior, copy and paste the duration for each behavior in seconds in this format (START, STOP). 
+# Look to the bottom to change titles, labels, and sizing.
+
+
 import matplotlib.pyplot as plt
 from tqdm import tqdm
 
